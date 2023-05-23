@@ -1,0 +1,20 @@
+
+<%= form_with model: @task do |f| %>
+  <div class="cards">
+    <div class='card-category' >
+      <%= f.label :title %>
+      <%= f.text_field :title %>
+    </div>
+    <div class='card-category' >
+      <%= f.label :details %>
+      <%= f.text_field :details %>
+    </div>
+    <div class='card-category' >
+      <%= f.label :completed %>
+      <%= f.check_box :completed %>
+    </div>
+    <div class='card-category' >
+    <%= f.submit "send", :class => 'button' %>
+    </div>
+  </div>
+<% end %>
